@@ -1,7 +1,10 @@
 name: Simple Test Workflow
  
-on: 
-  push:
+on:
+   workflow_run: 
+      workflows: [Simple Scan Workflow]
+      types: 
+        - completed
  
 jobs:
   test:
