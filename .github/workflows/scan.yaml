@@ -1,0 +1,13 @@
+name: Simple Scan Workflow
+ 
+on: 
+  push:
+ 
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for 20 seconds
+        run: sleep 20
+      - name: Print scan  message
+        run: echo "Scanning code job"  
