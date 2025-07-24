@@ -1,0 +1,13 @@
+name: Build workflow
+
+on:
+   workflow_run: 
+      workflows: [Simple Scan Workflow, Simple Test Workflow]
+      types: 
+        - completed
+jobs: 
+   build:
+     runs-on: ubuntu-latest
+     steps: 
+     - name: Echo build
+       run: echo "Building code"
