@@ -4,7 +4,7 @@ on:
   push:
  
 jobs:
-  test:
+  scan:
     runs-on: ubuntu-latest
     steps:
       - name: Wait for 20 seconds
